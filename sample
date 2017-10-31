@@ -1,0 +1,29 @@
+{
+	
+    "schemaName" : "Folio",	
+	"type": "object",
+	"properties": {
+	    "txnId": {
+          "description": "Source system internal Transaction Number",
+           "type": "number"
+		},
+		"arngt": {
+          "type": "object",
+          "properties": {
+              "code": {
+                  "arngtCd": "Code of associated Arrangement for this transaction",
+				  "type":"string"
+              },
+			  "arngtId": {
+                  "description": "Unique ID of this associated arrangment to this transaction",
+				  "type":"number"
+              },
+			  "arngtTypNm": {
+                  "description": "Name of the category of the arrangement associated to the Transaction",
+				  "type":"string"
+              }
+			}
+		} 
+	}
+	
+}
